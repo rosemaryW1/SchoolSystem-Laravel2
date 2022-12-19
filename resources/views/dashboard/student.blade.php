@@ -111,7 +111,7 @@
                             Parent's Email :
                         </label>
                     </div>
-                    <div class="md:w-2/3 block text-gray-600 font-bold">
+                    <div class="md:w-2/3 block text-orange-600 font-bold">
                         <span class="text-black-600 font-bold">{{ $student->parent->user->email }}</span>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                             Parent's Address :
                         </label>
                     </div>
-                    <div class="md:w-2/3 block text-gray-600 font-bold">
+                    <div class="md:w-2/3 block text-orange-600 font-bold">
                         <span class="text-black-600 font-bold">{{ $student->parent->current_address }}</span>
                     </div>
                 </div>
@@ -148,10 +148,10 @@
                     <div class="w-1/3 text-right text-white py-2 px-4 font-semibold">Teacher</div>
                 </div>
                 @foreach ($student->class->subjects as $subject)
-                    <div class="flex items-center justify-between border border-gray-200 -mb-px">
-                        <div class="w-1/3 text-left text-gray-600 py-2 px-4 font-medium">{{ $subject->subject_code }}</div>
-                        <div class="w-1/3 text-left text-gray-600 py-2 px-4 font-medium">{{ $subject->name }}</div>
-                        <div class="w-1/3 text-right text-gray-600 py-2 px-4 font-medium">{{ $subject->teacher->user->name }}</div>
+                    <div class="flex items-center justify-between border border-orange-200 -mb-px">
+                        <div class="w-1/3 text-left text-orange-600 py-2 px-4 font-medium">{{ $subject->subject_code }}</div>
+                        <div class="w-1/3 text-left text-orange-600 py-2 px-4 font-medium">{{ $subject->name }}</div>
+                        <div class="w-1/3 text-right text-orange-600 py-2 px-4 font-medium">{{ $subject->teacher->user->name }}</div>
                     </div>
                 @endforeach
 
@@ -164,7 +164,7 @@
 
         <div class="w-full px-0 md:px-6 py-4">
             <div>
-                <h2 class="text-gray-700 uppercase font-bold">My Attendance Record</h2>
+                <h2 class="text-orange-700 uppercase font-bold">My Attendance Record</h2>
             </div>
             <div class="flex items-center bg-black-600">
                 <div class="w-1/4 text-left text-white py-2 px-4 font-semibold">Date</div>
@@ -173,7 +173,7 @@
                 <div class="w-1/4 text-right text-white py-2 px-4 font-semibold">Attendance</div>
             </div>
             @foreach ($student->attendances as $attendance)
-                <div class="flex items-center justify-between border border-gray-200 -mb-px">
+                <div class="flex items-center justify-between border border-orange-200 -mb-px">
                     <div class="w-1/4 text-left text-black-600 py-2 px-4 font-medium">{{ $attendance->attendence_date }}</div>
                     <div class="w-1/4 text-left text-black-600 py-2 px-4 font-medium">{{ $attendance->class->class_name }}</div>
                     <div class="w-1/4 text-left text-black-600 py-2 px-4 font-medium">{{ $attendance->teacher->user->name }}</div>
