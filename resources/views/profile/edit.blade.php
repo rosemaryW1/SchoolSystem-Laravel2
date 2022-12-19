@@ -4,7 +4,7 @@
     <div class="profile">
         <div class="sm:flex sm:items-center sm:justify-between mb-6">
             <div>
-                <h2 class="text-gray-700 uppercase font-bold">Profile</h2>
+                <h2 class="text-gray-705 uppercase font-bold">Profile</h2>
             </div>
             <div class="flex flex-wrap items-center">
                 <a href="{{ route('profile') }}" class="bg-gray-600 text-white text-sm uppercase py-2 px-4 flex items-center rounded">
