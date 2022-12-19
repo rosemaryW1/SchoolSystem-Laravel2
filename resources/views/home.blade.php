@@ -13,7 +13,7 @@
                 <span class="ml-2 text-xs font-semibold">Profile</span>
             </a>
         </div> -->
-        <!-- Log on to codeastro.com for more projects -->
+        
     </div>
 
     @role('Admin')
