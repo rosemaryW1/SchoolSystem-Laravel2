@@ -11,7 +11,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     
 </head>
-<body class="bg-gray-100 font-sans antialiased">
+<body class="bg-orange-100 font-sans antialiased">
     <div id="app-2">
 
         @include('layouts.navbar')
